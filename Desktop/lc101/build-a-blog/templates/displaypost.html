@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <form>
+              <div class="art">
+
+                    <h2><a href="/blog/{{ art.key().id() }}">{{ art.title }}</a></h2>
+
+                    <pre class="art-body">{{art.art}}</pre>
+
+              </div>
+
+           
+
+
+       </form>
+{% endblock %}
