@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <form>
+           {% for art in arts %}
+              <div class="art">
+
+                    <h2><a href="/blog/{{ art.key().id() }}">{{ art.title }}</a></h2>
+
+                    <pre class="art-body">{{art.art}}</pre>
+
+              </div>
+
+           {% endfor %}
+
+
+       </form>
+{% endblock %}
